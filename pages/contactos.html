@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>CURSO HTML,CSS,JS</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+   <header class="header">
+      <div class="header_logo">
+        <a class="logo" href="../index.html"> <img src="../src/logo.png" alt="Logo" ></a>
+      </div>  
+      <nav class="header_nav"> 
+          <ul class="nav-list">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./video.html">Videos</a></li>
+              <li><a href="./contactos.html">Contactos</a></li>
+          </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <h1>Bienvenidos a mi Tienda</h1>
+      <p>Un Lugar Donde Puedes Encontrar Todo lo que <strong>Necesitas</strong> </p>
+
+      <section class="contacto">
+        <form action="./result.html" method="get" target="blank">
+          <fieldset>
+            <legend>Información Personal</legend>
+            <!-- 👉 el "for" del label debe coincidir con el "id" del input -->
+            <label for="nombre">Nombre:</label>
+              <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Ingrese su nombre..."
+            required
+              />
+
+            <label for="email">Correo Electrónico:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Ingrese su correo..."
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Motivo y Mensaje</legend>
+              <label for="motivo">Motivo:</label>
+            <select id="motivo" name="motivo">
+              <option value="">-- Seleccioná una opción --</option>
+              <option value="consulta">Consulta</option>
+              <option value="soporte">Soporte</option>
+              <option value="otros">Otros</option>
+            </select>
+
+          <label for="mensaje">Mensaje:</label>
+            <textarea              
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              cols="30"
+              placeholder="Hola, me comunico por..."
+            ></textarea> </textarea>
+          </fieldset>
+
+      <section>
+          <button class="button" type="submit">Enviar</button>
+          <button class="button" type="reset">Limpiar</button>
+      </section>
+        </form>
+            
+    </main>
+
+    <footer class="footer">    
+        <nav>
+            <ul>
+                <li><a href="#"></a>Instagram</li>
+                <li><a href="#"></a>Facebook</li>
+            </ul>
+        </nav>
+        <ul class="footer-info">
+            <li>Esta Pagina fue diseño de Jam Corporation</li>
+            <li>Todos los derechos reservados</li>
+            <li> © 2025 Copyright</li>
+        </ul>
+        <div>
+            <h4>Entregas solo en CABA y GBA Norte</h4>
+        </div>
+    </footer>
+</body>
+</html>

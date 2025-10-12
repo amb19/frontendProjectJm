@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.5;
+
+    background-color: #CACACA;
+    color: #333;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    flex: 1; /* Hace que el main crezca para llenar el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+H1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+}
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #34495E;
+}
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #7F8C8D;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: black;
+    background-color: #408dcc;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header, footer {
+    background-color: #2C3E50;
+    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    margin-left: 4rem;
+}
+
+.header_nav {
+    margin-right: 4rem;
+}
+
+.logo img {
+    width: 10rem;
+    height: auto;
+    object-fit: contain;
+}
+.header_nav ul li a{
+    margin-right: 4rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0.5rem;
+    
+}
+.header_nav ul li a:hover {
+    color: #408dcc;
+}
+.header_nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 2rem;
+}
+
+.footer-info {
+    text-align: center;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info li {
+    margin: 4px 0;
+    font-size: 1rem;
+}
+
+.footer nav ul {
+    list-style: none;
+    margin-left: 4rem;
+    
+}
+.footer div{
+    margin-right: 4rem;
+}
+
+/* Estilos para la sección de productos */
+.productos {
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    width: 40rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header, footer {
+        display: flex;
+        justify-content: column;
+        align-items: center;
+    }   
+    .header_logo, .header_nav, .footer div, .footer nav ul {
+        margin: 0;
+    }
+
+    .productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}   
