@@ -12,7 +12,7 @@
     <link rel="icon" href="./src/logo.png"><!-- icono pagina -->
     <title>CURSO HTML,CSS,JS</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/main.js" defer></script>
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -28,47 +28,27 @@
         </nav>
     </header>
     
-    <main>
+    <main id="product-details">
         <h1>Bienvenidos a mi Tienda</h1>
         <h3>Un Lugar Donde Puedes Encontrar Todo lo que <strong>Necesitas</strong> </h3>
         <h3>Algunos de nuestro Productos</h3>
         <br>
-        <section>
-            <div class="productos">
-                <article class="card">
-                    <h3>Producto 1</h3>
-                    <img src="./src/raspberry.png" alt="raspberry-pi-5">
-                    <p>Raspberry-pi-5.</p>
-                    <p>Precio: $ 90.000 </p>
-                    <button class="button"> Agregar al Carrito </button>
-                </article>
-
-                <article class="card">
-                    <h3>Producto 2</h3>
-                    <img src="./src/msd.png" alt="micro sd 10">
-                    <p>Micro SD Clase 10. </p>
-                    <p>Precio: $ 20.000 </p>
-                    <button class="button">Agregar al Carrito</button>
-                </article>
-
-                <article class="card">
-                    <h3>Producto 3</h3>
-                    <img src="./src/disipadores.png" alt="juego-disipadores">
-                    <p>Juego-disipadores para Raspberry-pi-5.</p>
-                    <p>Precio: $ 15.000 </p>
-                    <button class="button">Agregar al Carrito</button>
-                </article>
-                <article class="card">
-                    <h3>Producto 4</h3>
-                    <img src="./src/drone.png" alt="drone">
-                    <p>Drone con Camara.</p>
-                    <p>Precio: $ 600.000 </p>
-                    <button class="button">Agregar al Carrito</button>
-                </article>
+        <!-- PRODUCTOS DE LA API -->
+        <section id="product-list">
+            <div class="product-cards">
+                <!-- Los productos de la API se insertarán aquí dinámicamente -->
+                <div class="loading">Cargando productos...</div>
             </div>
-            
-
-                
+        </section>
+        <!-- CARRITO DE COMPRAS -->
+        <section id="cart">
+            <h2>🛒 Tu Carrito de Compras</h2>
+            <div class="cart-items">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
         </section>
     </main>
 
