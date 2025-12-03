@@ -1,6 +1,5 @@
-# Nombre del Proyecto
-
-Pagina web Venta de Productos
+# Pagina web Venta de Productos Front - End JS
+2C 2025
 
 ## Descripción:
 Este proyecto es una página web básica desarrollada como parte de un curso de Front-End.
@@ -9,7 +8,7 @@ La página está estructurada con HTML semántico y utiliza las etiquetas `<head
 estructura básica de una página web y prepararla para futuras mejoras con CSS y
 JavaScript.
 
-## Project Structure
+## Estructura de un proyecto
 ```
 proyecto-de-comercio-electrónico-en-javascript
 ├── index.html           # Muestra información detallada sobre la web y productos.
